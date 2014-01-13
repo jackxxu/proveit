@@ -1,0 +1,19 @@
+<% flash.each do |key, value| %>
+  <div class="alert alert-error">
+    <%= value %>
+  </div>
+<% end %>
+
+<%= simple_form_for(@label) do |f| %>
+  <%= f.error_notification %>
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :enabled, as: :boolean %>
+    <%= f.input :color %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

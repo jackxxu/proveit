@@ -1,0 +1,23 @@
+<h1>All Labels</h1>
+
+<table class='table'>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Enabled</th>
+    <th>Types</th>
+    <th>Color</th>
+  </tr>
+
+  <% @labels.each do |label| %>
+    <tr>
+      <td><%= label.name %></td>
+      <td><%= label.description %></td>
+      <td><%= label.enabled %></td>
+      <td><%= label.types.join(', ') %></td>
+      <td><%= label.color %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Create a new label', new_label_path %>

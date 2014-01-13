@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<% @case.instance_variable_get('@_definition').each do |key, value|%>
+<dl class="dl-horizontal">
+  <dt><%= key %></dt>
+  <dd><%= value %></dd>
+</dl>
+<% end %>
+
+<%= link_to 'Back', cases_path %>

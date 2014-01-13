@@ -1,0 +1,28 @@
+<h1><%= @filter.name%></h1>
+
+<table class='table'>
+  <tr>
+    <th>ID</th>
+    <th>Subject</th>
+    <th>Status</th>
+    <th>Type</th>
+    <th>Updated</th>
+    <th>Labels</th>
+    <th>Priority</th>
+    <th></th>
+  </tr>
+
+  <% @cases.each do |c| %>
+    <tr>
+      <td><%= c.id %></td>
+      <td><%= c.subject %></td>
+      <td><%= c.status %></td>
+      <td><%= c.type %></td>
+      <td><%= c.updated_at %></td>
+      <td><%= c.labels.join(', ') %></td>
+      <td><%= c.priority %></td>
+      <td><%= link_to 'Show', case_path(c.id) %></td>
+    </tr>
+  <% end %>
+</table>
+
