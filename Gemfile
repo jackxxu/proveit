@@ -30,3 +30,5 @@ group :development, :test do
   gem 'jazz_hands'
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+gem 'rails_12factor', group: :production # heroku assets
