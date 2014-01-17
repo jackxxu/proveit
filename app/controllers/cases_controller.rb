@@ -2,12 +2,12 @@ class CasesController < ApplicationController
   # GET /cases
   def index
     # get the cases under the first filter
-    @filter = DeskApi.client.filters.entries.first
-    @cases  = @filter.cases.entries
+    @filter = get_json('filters')['_embedded']['entries'].first
+    @cases  = get_json(@filter['_links']['cases']['href'])['_embedded']['entries']
   end
 
   # GET /cases/1
   def show
-    @case = DeskApi.client.cases.find(params[:id])
+    @case = get_json("cases/#{params[:id]}")
   end
 end

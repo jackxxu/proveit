@@ -2,24 +2,18 @@ require 'spec_helper'
 
 describe CasesController do
 
-  let(:filter) { Filter.new(1, 'filter 1') }
-  let(:sample_case) { Case.new(1, 'case 1') }
-
   describe "GET index" do
-    it "assigns all cases as @cases" do
-      DeskApi.stub_chain(:client, :filters, :entries).and_return([filter])
-      filter.stub_chain(:cases, :entries).and_return([sample_case])
-
+    it "assigns all cases as @cases", :vcr do
       get :index, {}
-      expect(assigns(:cases)).to eq([sample_case])
+      expect(assigns(:cases)).to be_a(Array)
+      expect(assigns(:cases).first).to be_a(Hash)
     end
   end
 
   describe "GET show" do
-    it "assigns the requested case as @case" do
-      DeskApi.stub_chain(:client, :cases, :find).and_return(sample_case)
-      get :show, {:id => sample_case.id}
-      expect(assigns(:case)).to eq(sample_case)
+    it "assigns the requested case as @case", :vcr do
+      get :show, {:id => 1}
+      expect(assigns(:case)).to be_a(Hash)
     end
   end
 

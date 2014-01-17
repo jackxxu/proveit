@@ -1,0 +1,134 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://jackxxu.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="McWpDdWUtnYN6hjiRWvb", oauth_nonce="S7eM6BAWC7CWPq9sbNXbMYltS0yqFmEDMA7pKF5AA",
+        oauth_signature="vLY5ouYWrTAVHAzGCIXYFu2U3bw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1389932403", oauth_token="SpVc2bt8OyZSRBUIqf1I", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 17 Jan 2014 04:20:04 GMT
+      etag:
+      - '"fd8423fb623b7cfc446060d9769a9425"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.9'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '56'
+      x-request-id:
+      - 4f423d978aad09712b46cbed3bfe7639
+      content-length:
+      - '2930'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":10,"_links":{"self":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"name":"Inbox","sort_field":"updated_at","sort_direction":"desc","position":1,"active":true,"_links":{"self":{"href":"/api/v2/filters/1843670","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843670/cases","class":"case"}}},{"name":"All
+        Cases","sort_field":"updated_at","sort_direction":"desc","position":2,"active":true,"_links":{"self":{"href":"/api/v2/filters/1843671","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843671/cases","class":"case"}}},{"name":"My
+        Cases","sort_field":"updated_at","sort_direction":"desc","position":3,"active":true,"_links":{"self":{"href":"/api/v2/filters/1843672","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843672/cases","class":"case"}}},{"name":"Unassigned
+        Cases","sort_field":"updated_at","sort_direction":"desc","position":4,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843673","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843673/cases","class":"case"}}},{"name":"My
+        Group''s Unresolved Cases","sort_field":"updated_at","sort_direction":"desc","position":5,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843674","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843674/cases","class":"case"}}},{"name":"All
+        Unresolved Cases","sort_field":"updated_at","sort_direction":"desc","position":6,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843675","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843675/cases","class":"case"}}},{"name":"Recently
+        Updated Cases","sort_field":"updated_at","sort_direction":"desc","position":7,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843676","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843676/cases","class":"case"}}},{"name":"Aging
+        Pending Cases (>3 Days)","sort_field":"priority","sort_direction":"desc","position":8,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843677","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843677/cases","class":"case"}}},{"name":"Outbox","sort_field":"updated_at","sort_direction":"desc","position":13,"active":true,"_links":{"self":{"href":"/api/v2/filters/1843678","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843678/cases","class":"case"}}},{"name":"Deleted
+        Cases","sort_field":"updated_at","sort_direction":"asc","position":14,"active":false,"_links":{"self":{"href":"/api/v2/filters/1843679","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/1843679/cases","class":"case"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 Jan 2014 04:20:04 GMT
+- request:
+    method: get
+    uri: https://jackxxu.desk.com/api/v2/filters/1843670/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="McWpDdWUtnYN6hjiRWvb", oauth_nonce="HCUloIZjpQNZX8ZPQYqJ6eJBDlgvZ03gU4GkjSOH8Ok",
+        oauth_signature="oyRShMJ8vefE4Pype88JOTAmfYQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1389932404", oauth_token="SpVc2bt8OyZSRBUIqf1I", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 17 Jan 2014 04:20:05 GMT
+      etag:
+      - '"a0ff023d15a008995e3133af79a46702"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.9'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '55'
+      x-request-id:
+      - 6a3de6c093c60d83cd9a5e5b117426aa
+      content-length:
+      - '2951'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":2,"_links":{"self":{"href":"/api/v2/filters/1843670/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/1843670/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/1843670/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":1,"external_id":null,"blurb":"Thanks
+        for trying Desk.com. We hope your trial goes well and you decide to use Desk.com
+        to wow your customers. Please let us know if there is anything we can do to
+        make your experience better. In the meantime see the tips below for getting
+        started...","subject":"Welcome to Desk.com","priority":4,"locked_until":null,"description":null,"status":"open","type":"email","labels":["Example","tes
+        5","test 1 ","test 32","test 4"],"language":"en","active_at":"2014-01-12T23:46:26Z","created_at":"2014-01-11T21:17:34Z","updated_at":"2014-01-17T04:04:00Z","received_at":"2014-01-11T21:17:34Z","first_opened_at":"2014-01-12T23:46:26Z","opened_at":"2014-01-12T23:46:26Z","first_resolved_at":null,"resolved_at":null,"custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/146598602","class":"customer"},"assigned_user":{"href":"/api/v2/users/21672882","class":"user"},"assigned_group":{"href":"/api/v2/groups/383770","class":"group"},"locked_by":null,"replies":{"href":"/api/v2/cases/1/replies","class":"reply"},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note"},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment"}}},{"id":2,"external_id":null,"blurb":"Desk.com
+        is a single place to keep track of all your customers online correspondence
+        (email, chats), social media conversation (Facebook, Twitter), and offline
+        contacts (phone).\n\nRECORD PHONE - In the upper right there is a New Case
+        button, this is h","subject":"Welcome to Desk.com","priority":9,"locked_until":null,"description":null,"status":"new","type":"phone","labels":["Example"],"language":"en","active_at":null,"created_at":"2014-01-11T21:17:34Z","updated_at":"2014-01-11T21:17:34Z","received_at":"2014-01-11T21:17:34Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/146598602","class":"customer"},"assigned_user":{"href":"/api/v2/users/21672882","class":"user"},"assigned_group":{"href":"/api/v2/groups/383770","class":"group"},"locked_by":null,"replies":{"href":"/api/v2/cases/2/replies","class":"reply"},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note"},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 Jan 2014 04:20:05 GMT
+recorded_with: VCR 2.8.0

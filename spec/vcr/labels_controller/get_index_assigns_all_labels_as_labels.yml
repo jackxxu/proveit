@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://jackxxu.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="McWpDdWUtnYN6hjiRWvb", oauth_nonce="mZT6eOb54MiNST6hDvykHki63Dt5CzGxma4V7WjRbvk",
+        oauth_signature="ai9X32VUj8dF7TTOFfs3ke%2BMlG4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1389934622", oauth_token="SpVc2bt8OyZSRBUIqf1I", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 17 Jan 2014 04:57:03 GMT
+      etag:
+      - '"f357b1830d5c4f19777b734ee5b8d24f"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.9'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '57'
+      x-request-id:
+      - 1eec4da7befa8de82c44975288c1ec9e
+      content-length:
+      - '3187'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":17,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"name":"Abandoned
+        Chats","description":"Abandoned Chats","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622450","class":"label"}}},{"name":"Escalated","description":"Escalated","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622449","class":"label"}}},{"name":"Example","description":"Example","enabled":true,"types":["case"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622447","class":"label"}}},{"name":"Feedback","description":"Feedback","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622445","class":"label"}}},{"name":"More
+        Info","description":"More Info","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622446","class":"label"}}},{"name":"MyLabel","description":"A
+        Test Label","enabled":true,"types":["case","macro"],"color":"blue","_links":{"self":{"href":"/api/v2/labels/1622600","class":"label"}}},{"name":"MyLabel1","description":"A
+        Test Label","enabled":true,"types":["case","macro"],"color":"blue","_links":{"self":{"href":"/api/v2/labels/1622601","class":"label"}}},{"name":"name","description":"description","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630523","class":"label"}}},{"name":"Negative
+        Feedback","description":"Negative Feedback","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622448","class":"label"}}},{"name":"Sample
+        Macros","description":"Sample Macros","enabled":true,"types":["macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1622444","class":"label"}}},{"name":"tes
+        5","description":"adsf","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630498","class":"label"}}},{"name":"test
+        1 ","description":"test","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630493","class":"label"}}},{"name":"test
+        2","description":"adfadsf","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630495","class":"label"}}},{"name":"test
+        21","description":"test","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630535","class":"label"}}},{"name":"test
+        22","description":"test","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630536","class":"label"}}},{"name":"test
+        32","description":"323","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630501","class":"label"}}},{"name":"test
+        4","description":"asdfa","enabled":true,"types":["case","macro"],"color":"default","_links":{"self":{"href":"/api/v2/labels/1630499","class":"label"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 Jan 2014 04:57:03 GMT
+recorded_with: VCR 2.8.0

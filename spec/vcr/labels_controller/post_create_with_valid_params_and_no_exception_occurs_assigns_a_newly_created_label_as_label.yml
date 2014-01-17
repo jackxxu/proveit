@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://jackxxu.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: '{"name":"test 22","description":"test","enabled":"1","color":"default"}'
+    headers:
+      accept:
+      - application/json
+      content-type:
+      - application/json
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      user-agent:
+      - OAuth gem v0.4.7
+      content-length:
+      - '71'
+      authorization:
+      - OAuth oauth_body_hash="DkVme3FrEQaKWOIoBDV9B%2B1KFqc%3D", oauth_consumer_key="McWpDdWUtnYN6hjiRWvb",
+        oauth_nonce="Bf1jRZoZackt1nNhnxG7stP3mCAKu5zRDqgGykI", oauth_signature="W1pD5F43Gn%2FrCYIBhHftMEqtx20%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1389934098", oauth_token="SpVc2bt8OyZSRBUIqf1I",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 17 Jan 2014 04:48:19 GMT
+      status:
+      - 422 Unprocessable Entity
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.9'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '41'
+      x-request-id:
+      - 43fbb4151e43e68c93901559cfafb1f2
+      content-length:
+      - '59'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"message":"Validation Failed","errors":{"name":["taken"]}}'
+    http_version: '1.1'
+  recorded_at: Fri, 17 Jan 2014 04:48:19 GMT
+recorded_with: VCR 2.8.0

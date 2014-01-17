@@ -11,11 +11,11 @@
 
   <% @labels.each do |label| %>
     <tr>
-      <td><%= label.name %></td>
-      <td><%= label.description %></td>
-      <td><%= label.enabled %></td>
-      <td><%= label.types.join(', ') %></td>
-      <td><%= label.color %></td>
+      <td><%= label['name'] %></td>
+      <td><%= label['description'] %></td>
+      <td><%= label['enabled'] %></td>
+      <td><%= label['types'].join(', ') %></td>
+      <td><%= label['color'] %></td>
     </tr>
   <% end %>
 </table>

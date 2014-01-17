@@ -5,17 +5,12 @@ class Label
   attr_accessor :name, :description, :type, :enabled, :color
   validates_presence_of :name, :description, :color
 
-  def save
-    DeskApi.client.labels.create attributes
+  def attributes
+    {
+      'name' => name,
+      'description' => description,
+      'enabled' => enabled,
+      'color' => color
+    }
   end
-
-  private
-    def attributes
-      {
-        name: name,
-        description: description,
-        enabled: enabled,
-        color: color
-      }
-    end
 end

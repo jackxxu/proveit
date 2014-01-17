@@ -11,7 +11,7 @@ gem 'figaro'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
-gem 'desk_api', '0.5.0'
+gem 'oauth'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -29,6 +29,8 @@ end
 group :development, :test do
   gem 'jazz_hands'
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'vcr'
+  gem 'fakeweb'
 end
 
 gem 'rails_12factor', group: :production # heroku assets
